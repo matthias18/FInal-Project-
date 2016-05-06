@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ff5c627a-6853-4f8f-9b63-95ca035ca946" name="MarkUML" linkedPackageId="92f11e99-b159-459e-a250-01477b625c90" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="5b1631bf-65b1-4763-9df0-e4a17c308cdb">
+      <profileInstance Id="5187aa19-a86e-48eb-a869-e6dffda240c9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e439aef8-66ee-4f1b-9745-c57198ea549f">
+      <profileInstance Id="8fc7a8cd-59e6-4371-88ff-bcd428c9f9eb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="62e9a57d-bea4-48c0-83eb-d34c58539028" name="Questions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="6e8bb172-f72b-45f8-a70f-b4125ccd6ff2" />
+        <suppliersInternal>
+          <dependency Id="96bd915d-c317-478a-9106-647dcc2c683c">
+            <classMoniker Id="c6b5cbc7-93cf-4991-950a-e9e8c650587b" LastKnownName="Tests" />
+            <elementDefinition Id="fcd91b54-c401-4173-8632-c6681fd61529" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="b228b06b-6056-4bc9-bcfa-edc94a517dd1" name="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e64d99a3-d3a2-45b6-8300-3ef39bbfe487" />
+          </property>
+          <property Id="27c3ef7c-552e-4979-a9a2-24f5cee8d546" name="Answer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="35cd79bf-6726-46e2-bea3-4ecf5969e734" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1cde2f35-ddf9-44a3-9b81-95ae4e90c8a0" name="Options *Template*" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d66a5dba-204a-4e4a-9f29-b6cf493cc077" />
+          </operation>
+          <operation Id="883895ff-2985-46e3-b2f4-9880e6cc7171" name="Correct Answer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1b6e5fb4-1e41-4fcb-a9fe-879502a74d3d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2fba2f29-11de-46e2-bb7c-fcb643d06edb" name="char" direction="In" isUnique="false">
+                  <elementDefinition Id="cd905651-edba-4c97-895e-20eb4e89925f" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="801f68cb-ce7b-4a5b-bbaf-243615f8f345" name="Correct Answer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="02c41967-0fc6-4e56-b4b6-d39ffd57e255" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="94b8a320-772e-4b5c-8063-119888d8de4a" name="nt" direction="In" isUnique="false">
+                  <elementDefinition Id="eeec1aa1-cbfe-4242-a655-5cb5945593f9" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4f85a508-e1ab-4991-a3c1-0b180d745aed" name="char" direction="In" isUnique="false">
+                  <elementDefinition Id="01e85448-1172-476b-8e7c-68095cf340b6" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="560ab5ba-6565-418f-9a45-9961320cf4be" name="Students" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="655b7f24-e108-42af-9bb1-dc6c74e3f7fa" />
+        <suppliersInternal>
+          <dependency Id="ecf686b4-b5a6-4f81-a5b3-c3ff025904f9">
+            <classMoniker Id="e120aedd-c918-4bfd-bcf2-26b2868108cb" LastKnownName="Class Average" />
+            <elementDefinition Id="a421dbaf-84ff-4c83-9ae8-98a70396e344" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="73a48a06-45c2-4ef4-a46f-fe57918212e5" name="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="69b1e7ea-88b6-4aaa-b9c6-6bb73a151b98" />
+          </property>
+          <property Id="34fe992a-6cd7-4cc7-949c-dd40a536ad8f" name="ID Number" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e67b388d-621b-46dc-ae81-7556ff621c5c" />
+          </property>
+          <property Id="30321a45-cec0-4bf4-99c6-fc9178e77967" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eeeeac5b-9a21-4952-a07e-6556ac71c022" />
+          </property>
+          <property Id="ab440f23-f104-4151-a136-afb6a11ffccd" name="Number Ans Correct" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="aa8c58b0-3878-4281-80fb-cc6173dcb825" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2befd9df-ac31-439e-96ea-260e5f73b07c" name="Average Grade" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="16170399-57f4-4b78-bf66-e99781826930" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9413924d-b927-49ca-9e77-8dca72845e60" name="float" direction="In" isUnique="false">
+                  <elementDefinition Id="6652d24d-0b5f-4639-8dbb-e08f05263ac7" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="63904ade-c58d-41e7-b8bf-fabd7c660612" name="Answers" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a471eced-0c57-4b53-bf52-697c5d22ef33" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="425fb81c-8c63-426b-a26f-54918e6116ce" name="chars" direction="In" isUnique="false">
+                  <elementDefinition Id="e509f7c8-5fda-4ae7-82d5-512a9dde9cc1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="64dfa74f-2421-43b3-a7b5-c2212bde9251" name="Compare to Key" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="467179e7-ef4d-4744-9ed8-5aaafdd6139d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3c1373d7-aaea-4709-a684-96b055f2855f" name="bool" direction="In" isUnique="false">
+                  <elementDefinition Id="87bf4a8a-7d01-413b-9b77-8308f38f989b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e9d6a610-6dad-4dec-bd56-5934af8e8018" name="Number of Tests" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5a80b51f-0460-48c9-9aaa-9628fb2c7da1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="649b52a8-ae14-47a4-8c36-ce7a236c6575" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="e3832e40-2453-48b4-b002-f91828a59008" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b80f956e-74e7-483a-8d35-5eb7376fa5fc" name="Grade for Indv. Test" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0048d166-9885-473d-ac33-9960ad5fbb14" />
+          </operation>
+          <operation Id="81735672-27d8-40d4-ad16-754c8ecd330f" name="Correct Count" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="545767b3-3795-4861-9710-b5e41b1e55d5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d1c6077c-a441-4d2e-a1a5-d1cbc3739ea1" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="81dd4677-e07b-4d75-94d0-3dc0a641c8fd" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c6b5cbc7-93cf-4991-950a-e9e8c650587b" name="Tests" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d9b97eea-5ef0-4edb-8e1a-ed1386dd042f" />
+        <suppliersInternal>
+          <dependency Id="b0f69538-479f-4801-8d7b-36d18b90678d">
+            <classMoniker Id="560ab5ba-6565-418f-9a45-9961320cf4be" LastKnownName="Students" />
+            <elementDefinition Id="f8a63e8d-bc2d-4be5-916a-8a4cc3899a7d" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="5f93c284-9784-4259-911c-611881215d50" name="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="70f57040-391e-4432-9cf0-0e22b63216c0" />
+          </property>
+          <property Id="6c957fa2-7235-4793-9999-3ead6dd976ae" name="Number of Questions" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b18fa4d3-1426-4c43-8056-b2b61be18414" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="1abce101-0617-42e6-98e8-1ae2e8cc3bae" name="Answer Key" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d39a5fff-cf9c-45f0-ac82-d1a288bb6d25" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="666e5907-845b-43d0-9740-15fd67cd8098" name="void" direction="In" isUnique="false">
+                  <elementDefinition Id="17ddc04b-de43-42a4-a94c-0b9e18748077" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e120aedd-c918-4bfd-bcf2-26b2868108cb" name="Class Average" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fccf7208-7c4d-4835-8a01-10c395698b6b" />
+        <ownedAttributesInternal>
+          <property Id="432427d8-77ba-4252-adb0-799820110f58" name="Number of Student" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6f25b351-5ea3-4b2b-b221-6a6cfce2fd72" />
+          </property>
+          <property Id="f83d049f-c070-4900-81ef-7c147318c752" name="Number of Tests" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="48119bed-8828-4a6d-a193-0cf127f99956" />
+          </property>
+          <property Id="9c3e6ac9-a4a0-4b88-b0cd-c6355a550b67" name="Answer Keys" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b7d49154-2a44-4ac4-8ede-edd7f8ac9baa" />
+          </property>
+          <property Id="87021e76-dfe1-46f9-b74c-d1b17bf558a8" name="Average" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7c5eebab-6cf0-4b2a-ac0b-14055a547509" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a0461d6d-38ac-4b0d-ada5-5a60e8133df4" name="Compute Average" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="317d97d6-6e6d-411c-89a7-e9c7c6f15649" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ec1085d2-b290-4926-84a0-5a40e6c44ae3" name="double" direction="In" isUnique="false">
+                  <elementDefinition Id="61650fc8-c131-4ad5-b66d-0481f1fc78cd" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="60ff7fc4-df0f-4973-8cc3-4086485aece9" name="Individual Average" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d1d88b7c-4723-46c4-b0de-8e0769062373" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de7211c2-7c90-4268-ae53-77bdae1985ec" name="float" direction="In" isUnique="false">
+                  <elementDefinition Id="f172789a-6359-4572-bfe5-b74432e1dc68" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="ed98cc93-a9ba-4728-9caf-01de3fa688c6" name="Sum of Tests" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e99d6acc-eccf-48e7-bbd5-7408eb13e84a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b415b39-d179-478f-afaa-95bae5a747d5" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="40de8673-f87c-424e-9dcf-fc913ac0ca57" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="92f11e99-b159-459e-a250-01477b625c90" name="MarkUML">
+    <elementDefinition Id="e83a3194-6193-49c0-9dda-0c5ec17fe796" />
+  </package>
+</logicalClassDesignerModel>
