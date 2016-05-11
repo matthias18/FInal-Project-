@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include 'cl4sses'
+#include 'cl4sses.cpp'
 using namespace std;
 
 
 int main()
 {
 	cout << "Welcome to the easy, automatic grader program! \n";
-	cout << " "
+	cout << " ";
 	return 0;
 }
